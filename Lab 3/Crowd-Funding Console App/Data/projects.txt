@@ -1,0 +1,3 @@
+{"id": 0, "title": "embedded Systems", "details": "12gdsfsd", "target": 1000, "startDate": "2021-01-01 00:00:00", "endDate": "2021-01-01 00:00:00", "ownerID": 1}
+{"id": 1, "title": "IoT", "details": "new Details", "target": 500, "startDate": "2021-11-01 00:00:00", "endDate": "2021-11-01 00:00:00", "ownerID": 1}
+{"id": 2, "title": "IoT", "details": "new Details", "target": 500, "startDate": "2021-11-01 00:00:00", "endDate": "2021-11-01 00:00:00", "ownerID": 2}

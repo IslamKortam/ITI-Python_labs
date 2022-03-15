@@ -1,0 +1,101 @@
+0- 
+    primitive DataTypes:
+        int, float, string, boolean (True / False) 
+
+    
+1- 
+    type() => returns the type of a variable
+
+---------------------------------------------------------------------------
+2-
+    Python is loosly dynmically typed language.
+
+    loosly:
+        interpreter detects the datatype of the variable during the runtime
+    
+    dynmically:
+        interpreter allows changing the datatype of the varibale during the runtime
+        
+---------------------------------------------------------------------------
+3-
+    / vs //
+    /   -> Division with fraction  
+                => 5 / 2 = 2.5
+    
+    //  -> Division without fraction (returns the flour of the result)
+                =>  5 / 2 = 2
+                => -5 / 2 = -3
+
+---------------------------------------------------------------------------
+4-
+    exponent operator **
+        5 ** 2 = 25
+
+---------------------------------------------------------------------------
+5-
+    == checks the datatype and the value
+        => 5 == "5" evalutes to False
+---------------------------------------------------------------------------
+6- 
+    the return of the logical operator equals the first element that made up this value (True of False)
+        => 10 and 1 returns 1
+        => 0 or 10 or 1 returns 10
+        => 1 and 10 and "" and 0 returns ""
+
+---------------------------------------------------------------------------
+7- strings:
+    x = "ahmed"
+    x[0]        => "a"
+    x[2 : 4]    => "me"    => substring from index to to index 3 (4 - 1)
+    x[100]      => runtime error
+
+    concatination:
+        x = x + " Kortam"   => "ahmed Kortam"
+    
+    interpolation:
+        x = 2 * x   => "ahmed Kortamahmed Kortam"   (string repetation)
+
+    built in functions doesn't affect inplace (deosn't affect the actual string)
+    it returns a new string but deson't affect the actual one
+---------------------------------------------------------------------------
+8- 
+    isdigit() vs isnumeric():
+
+    isdigit():
+        accepts strings with only english digits (0-9) (UTF-8 encoding)
+    isnumeric()
+        accepts other encoding digits like chineese and so on (also english) => Wider range
+---------------------------------------------------------------------------
+9- strip() | lstrip() | rstrip()
+    string.strip("Set of chars to be stripped from both ends")
+        *note: default parameter is ' ' => strips spaces from both ends
+        *chars to be stripped are to be sent in one string as a parameter to the function
+        *order of these chars deosn't affect anything
+
+    lstrip() => strips the left side only
+    rstrip() => strips the right side only
+---------------------------------------------------------------------------
+10-
+
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+
+
+if we want to modify a global variable in a funtion scope, we can use keyword (global varName)
+
+example:
+
+z = 'islam'
+
+def function():
+    global z
+    z = 'ahmed'
+    return
+
+function()
+
+#this will modify the global z and it is the only way to modify it
