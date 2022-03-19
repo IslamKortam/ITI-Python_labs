@@ -66,8 +66,16 @@ class Employee(Person):
         else:
             raise Exception("distanceToWork must be an (Int or Float) Larger than 0")
 
-    def work(self):
-        pass
+    def work(self, hours):
+        if (isinstance(hours, int) or isinstance(hours, float)) and hours >= 0:
+            if hours == 8:
+                self.mood = "happy"
+            elif hours < 8:
+                self.mood = "lazy"
+            else:
+                self.mood = "tired"
+        else:
+            raise Exception("Hours must be (int or Float) >= 0")
 
     def drive(self):
         pass
@@ -75,7 +83,21 @@ class Employee(Person):
     def refuel(self):
         pass
 
-    def send_email(self):
-        pass
+    def send_email(self, to, subject, msg, recieverName):
+        if not isinstance(to, str):
+            raise Exception("to type must be an str")
+        if not validateEmail(to):
+            raise  Exception("to isn't a valid email")
+        if not isinstance(subject, str):
+            raise Exception("subject type must be a str")
+        if not isinstance(msg, str):
+            raise Exception("msg type must be a str")
+        if not isinstance(recieverName, str):
+            raise Exception("Reciever Name type must be a str")
+        print(f"Sening an email to {recieverName} ...")
+        print(f"To {to}")
+        print(f"Subject: {subject}")
+        print(msg)
+
 
 
